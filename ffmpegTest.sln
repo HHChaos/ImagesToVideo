@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ffmpegTest", "ffmpegTest\ffmpegTest.csproj", "{20CD118F-4FC5-4784-AA17-1295955757AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20CD118F-4FC5-4784-AA17-1295955757AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CD118F-4FC5-4784-AA17-1295955757AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CD118F-4FC5-4784-AA17-1295955757AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CD118F-4FC5-4784-AA17-1295955757AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45496B85-498F-4FDE-A7D9-E4362ADE7A1C}
+	EndGlobalSection
+EndGlobal

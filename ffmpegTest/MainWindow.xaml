@@ -1,0 +1,72 @@
+﻿<Window x:Class="ffmpegTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ffmpegTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="文件路径:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="1" Text="输出路径:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="2" Text="视频时长/s:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="3" Text="图片集:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Text="ffmpeg:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Grid Grid.Row="0" Grid.Column="1" Height="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="TboxFilePath" IsEnabled="False"></TextBox>
+                <Button Content="..." Grid.Column="1" Width="20" Click="FilePicker_Click"></Button>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1" Height="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="TboxFolderPath">d:\output</TextBox>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="1" Height="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="TboxDuration">30</TextBox>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="1" Height="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="TboxPictures">C:\Users\hhcha\Videos\test\export_%d.png</TextBox>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="1" Height="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="TboxFFmpeg">D:\ffmpeg\ffmpeg.exe</TextBox>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Button Content="开始转换" Margin="10" Width="100" Height="40" Click="Button_Click"></Button>
+        </Grid>
+    </Grid>
+</Window>
